@@ -27,8 +27,8 @@ public class FuturesAccount {
     private String totalCrossUnPnl;
     private String availableBalance;
     private String maxWithdrawAmount;
-
     private String multiAssetsMargin;
+    private String tradeGroupId;
 
     private List<FuturesAssetBalance> assets;
     private List<FuturesPosition> positions;
@@ -169,6 +169,14 @@ public class FuturesAccount {
         this.multiAssetsMargin = multiAssetsMargin;
     }
 
+    public String getTradeGroupId() {
+        return tradeGroupId;
+    }
+
+    public void setTradeGroupId(String tradeGroupId) {
+        this.tradeGroupId = tradeGroupId;
+    }
+
     public List<FuturesAssetBalance> getAssets() {
         return assets;
     }
@@ -213,6 +221,7 @@ public class FuturesAccount {
                 .append("totalCrossUnPnl", totalCrossUnPnl)
                 .append("availableBalance", availableBalance)
                 .append("maxWithdrawAmount", maxWithdrawAmount)
+                .append("tradeGroupId", tradeGroupId)
                 .toString();
 
 
